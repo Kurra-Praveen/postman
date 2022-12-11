@@ -1,0 +1,48 @@
+[
+    {
+        "POST": [
+            {
+                "id": 1234,
+                "username": "PraveenK",
+                "firstName": "Kurra",
+                "lastName": "Praveen",
+                "email": "PK@gmail.com",
+                "password": "1234321",
+                "phone": "0987654321",
+                "userStatus": 0
+            },
+            {
+                "id": 4321,
+                "username": "Kpraveen",
+                "firstName": "Praveen",
+                "lastName": "kurra",
+                "email": "kp@gmail.com",
+                "password": "09837",
+                "phone": "19273",
+                "userStatus": 1
+            }
+        ],
+        "PUT":[
+            {
+                "id": 999,
+                "username": "AlluArjun",
+                "firstName": "Arjun",
+                "lastName": "Arha",
+                "email": "aa@gmail.com",
+                "password": "1234321",
+                "phone": "0987654321",
+                "userStatus": 0
+            },
+            {
+                "id": 4321,
+                "username": "Ronaldo999",
+                "firstName": "Cristiano",
+                "lastName": "Ronaldo",
+                "email": "cr7@gmail.com",
+                "password": "09837",
+                "phone": "19273",
+                "userStatus": 1
+            }
+        ]
+    }
+]
