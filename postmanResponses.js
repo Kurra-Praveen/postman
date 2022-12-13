@@ -32,12 +32,16 @@ function getDate(){
 }
     newman.run({
         collection: "https://api.postman.com/collections/24554143-a162e9b6-a421-42a2-8753-adc99759dfc4?access_key=PMAT-01GM0Y08TK4XZ9262MAGRRVFM9",
-        reporters: 'cli',
         iterationData:'./testData.json',
-        reporters: 'htmlextra',
+        // environment:"https://www.postman.com/praveen-kurra/workspace/my-postman/environment/24554143-0445b30c-7cab-4884-8fcd-1ee72f20f9af",
+        // envVar: [ 
+        //     { "key":"url", "value":"https://petstore.swagger.io/v2/user" },
+        //     { "key":"endpoint", "value":"user"}
+        // ],
+        reporters: ['htmlextra','cli'],
         reporter: {
             htmlextra: {
-                export: './htmlResults2.html', // If not specified, the file will be written to `newman/` in the current working directory.
+                export: './reports/'+getDate()+'.html', // If not specified, the file will be written to `newman/` in the current working directory.
                 //template: './customTemplate.hbs' // optional, this will be picked up relative to the directory that Newman runs in.
             }
         }
