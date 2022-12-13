@@ -39,12 +39,12 @@ function getDate(){
         //     { "key":"endpoint", "value":"user"}
         // ],
         reporters: ['htmlextra','cli'],
-        reporter: {
-            htmlextra: {
-                export: './reports/'+getDate()+'.html', // If not specified, the file will be written to `newman/` in the current working directory.
-                //template: './customTemplate.hbs' // optional, this will be picked up relative to the directory that Newman runs in.
-            }
-        }
+        // reporter: {
+        //     htmlextra: {
+        //         export: './reports/'+getDate()+'.html', // If not specified, the file will be written to `newman/` in the current working directory.
+        //         //template: './customTemplate.hbs' // optional, this will be picked up relative to the directory that Newman runs in.
+        //     }
+       // }
         
         
     }).on('beforeRequest', (error, data) => {
